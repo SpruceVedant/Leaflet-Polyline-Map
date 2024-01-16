@@ -5,7 +5,7 @@ const getTolls = (params) => {
     result = {};
   return new Promise((resolve, reject) => {
     axios
-      .post("https://apis.tollguru.com/toll/v2/origin-destination-waypoints", params, {
+      .post("https://apis.tollguru.com/toll/v2/origin-destination-waypoints", params, {//stable api endpoint
         headers: {
           "x-api-key": "JfQfQjG8bhjNpMMn6FJ6RFPh4BgJn8nF",
         },
